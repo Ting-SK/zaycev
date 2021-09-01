@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import './assets/fonts/stylesheet.css'
+import "./assets/fonts/stylesheet.css";
 
 export const GlobalStyle = createGlobalStyle`
  *{
@@ -31,6 +31,5 @@ export const AppWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100vw;
   background: #373737;
 `;

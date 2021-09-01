@@ -6,21 +6,20 @@ export const NavWrapper = styled.ul`
   flex-direction: row;
   justify-content: flex-start;
   align_items: center;
-  max-width: 1212px;
+  max-width: 1200px;
   width: 100%;
   height: 73px;
   background: #373737;
-  ${Media.smallDesktop} {
-    justify-content: space-around;
-  }
-  ${Media.tablet} {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 450px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none !important;
   }
 `;
 
 export const Text = styled.p`
+  font-size: 18px;
+  white-space: nowrap;
   position: relative;
   text-decoration: none;
   color: #ffffff;
@@ -38,6 +37,9 @@ export const Text = styled.p`
     background: #FF3C00;
   }
 `}
+  ${Media.tablet} {
+    font-size: 16px;
+  }
 `;
 
 export const List = styled.li`
@@ -46,7 +48,7 @@ export const List = styled.li`
   justify-content: center;
   flex-wrap: wrap;
   padding: 0 8px;
-  margin: 0 21px;
+  margin: 0 13px;
   font-family: Montserrat;
   font-weight: 600;
   font-size: 18px;
@@ -70,20 +72,9 @@ export const List = styled.li`
   &:hover:after {
     width: 100%;
   }
-
-  ${Media.smallDesktop} {
-    margin: 0;
-  }
-
   ${Media.tablet} {
+    margin: 0 8px 0 0;
     height: 100%;
-    border-collapse: collapse;
-    border-top: 1px solid #505050;
-    border-bottom: 1px solid #505050;
-  }
-  ${Media.mobile} {
-    justify-content: flex-start;
-    padding-left: 28px;
   }
   ${({ active }) =>
     active &&

@@ -11,7 +11,6 @@ export const HotText = (props) => {
       clearInterval(timer);
     };
   }, []);
-  console.log(hours);
   if (hours >= 12 && hours < 14) {
     return <Text hotTime>{props.children}</Text>;
   } else {
