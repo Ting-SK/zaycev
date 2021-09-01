@@ -1,0 +1,1 @@
+export { HotText } from "./HotText";

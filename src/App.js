@@ -1,12 +1,12 @@
 import React from "react";
 import { AppWrapper, GlobalStyle } from "./globalStyles";
-import { Navigation } from "./ui/Navigation";
+import { Tabs } from "./ui/Tabs";
 
 export const App = () => {
   return (
     <AppWrapper>
       <GlobalStyle />
-      <Navigation />
+      <Tabs />
     </AppWrapper>
   );
 };

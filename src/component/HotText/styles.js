@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const UniqueList = styled.li`
+export const UniqueText = styled.p`
 padding: 8px;
 position: relative;
 text-decoration: none; 
